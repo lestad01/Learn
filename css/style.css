@@ -670,3 +670,32 @@ textarea {
     margin: 20px 0;
 }
 /*Music end*/
+
+/* Images block start*/
+
+.wrapper-images{
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.section_images{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section_images:after{
+    display: block;
+    content: '';
+    width: 253px;
+    height: 4px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+/*Images block end */
