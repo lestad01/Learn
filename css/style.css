@@ -411,7 +411,7 @@ textarea {
 
   .wrapper{
       max-width: 1060px;
-      margin: 0 auto; /* выравнивает по центру внутри его родителя*/
+      margin: 0 auto 25px auto; /* выравнивает по центру внутри его родителя*/
   }
 
   .wrapper-full{
@@ -454,6 +454,11 @@ textarea {
       top: 0;
       left: 0;
       width: 100%;
+      z-index: 222;
+  }
+  .header_scroll {
+      background-color: rgb(0, 3, 44);
+      transition: 0.4s linear;
   }
   .header_wrapper{
       display: flex;
@@ -482,7 +487,12 @@ textarea {
       text-decoration: none;
   }
   .header_link:hover,.header_link:focus, .header_link:active {
-      opacity: 75%;
+      opacity: 65%;
+      transition: 0.3s all;
+  }
+  .header-logo-link:hover,.header-logo-link:focus, .header-logo-link:active {
+      opacity: 65%;
+      transition: 0.3s all;
   }
  
   a:hover, a:focus{
@@ -496,28 +506,28 @@ textarea {
 
 
   /*Intro styles start*/
-.intro{
-    min-height: 100vh;
-    background: url(../img/logos.jpg) no-repeat center;
-    background-size: cover;
-    padding-top: 135px;
-    padding-bottom: 223px;
-}
-.intro-title{
-    max-width: 619px;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 60px;
-    color: rgb(235, 226, 226);
-    margin-bottom: 15px;
-}
-.intro_subtitle{
-    max-width: 546px;
-    color: rgb(235, 226, 226);
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 30px;
-}
+    .intro{
+        min-height: 100vh;
+        background: url(../img/logos.jpg) no-repeat center;
+        background-size: cover;
+        padding-top: 200px;
+        padding-bottom: 210px;
+    }
+    .intro-title{
+        max-width: 619px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 60px;
+        color: rgb(235, 226, 226);
+        margin-bottom: 15px;
+    }
+  .intro_subtitle{
+        max-width: 546px;
+        color: rgb(235, 226, 226);
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
 
   .search_form_info{
     display: flex;
@@ -673,7 +683,7 @@ textarea {
 /*IMG start*/
 
 .images{
-    margin-bottom: 132px;
+    margin-bottom: 200px;
 }
 
 .wrapper_img{
@@ -761,5 +771,133 @@ textarea {
     transition: 0.4s all ;
     transform: scale(1.05);
 }
-
 /*IMG end*/
+
+
+/*Videos start*/
+.videos {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.videos_places {
+    position: relative;
+    top: -75px;
+    left: 0;
+}
+
+.videos_title{
+    margin-bottom: 15px;
+}
+
+.videos_section{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.videos_section:after{
+    display: block;
+    content: '';
+    width: 253px;
+    height: 4px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 2;
+}
+
+.videos-wrapper {
+    max-width: 1260px;
+    margin: 0 auto;
+    position: relative;
+}
+.video-item{
+    padding-top: 56.25%;
+}
+.video_element{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Videos end*/
+
+
+/*Footer start*/
+
+.foter{
+    width: 100%;
+    background-color: rgb(0, 3, 44);
+    padding: 60px 0;
+}
+
+.foter-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-logo{
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    text-decoration: none;
+    color: rgb(235, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.foter-logo-block{
+    width: 50%;
+    flex-wrap: wrap;
+    flex-direction: center;
+    text-align: center;
+    justify-content: flex-end;
+}
+.div_link{
+    padding: 30px 0;
+}
+
+.foter-nav {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    justify-items: flex-end;
+    padding: 10px 0;
+}
+
+.footer-link{
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 14px;
+    color: rgb(235, 226, 226);
+    text-decoration: none;
+}
+.footer-link:hover,.footer-link:focus, .footer-link:active {
+    opacity: 65%;
+    transition: 0.3s all;
+}
+span{
+    color: rgb(235, 226, 226);
+}
+
+.footer_mail:hover,.footer_mail:focus, .footer_mail:active{
+    color: #c55a09;
+}
+
+.footer-logo:hover,.footer-logo:focus, .footer-logo:active {
+    opacity: 65%;
+    transition: 0.3s all;
+}
+
+
+/*Footer end*/
