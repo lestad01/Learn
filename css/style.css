@@ -396,6 +396,10 @@ textarea {
   *,*::before,*::after{
       box-sizing:inherit;
   }
+  *{
+      list-style: none;
+      text-decoration: none;
+  }
   body{
       font-family: 'Bad Script';
       font-style: normal;
@@ -408,7 +412,6 @@ textarea {
       max-width: 100%;
       height: auto;
   }
-
   .wrapper{
       max-width: 1060px;
       margin: 0 auto 25px auto; /* выравнивает по центру внутри его родителя*/
@@ -439,7 +442,94 @@ textarea {
 
 /*header styles start*/
 
-  .header-logo-link{
+  .sidebar{
+      position: fixed;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background: #0e268f;
+      transition: all .5s ease;
+  }
+
+    .sidebar header {
+        font-size:  22px;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+        background: #0e268f;
+        user-select: none;
+    }
+
+    .sidebar ul a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 65px;
+        font-size: 20px;
+        color: white;
+        padding-left: 40px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255,255,255,.1);
+        border-bottom: 1px solid black;
+        transition: .4s;
+    }
+
+    ul li:hover a {
+        padding-left: 60px;
+    }
+
+    .sidebar ul a i {
+        margin-right: 16px;
+    }
+
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        position: absolute;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    label #btn{
+        left: 40px;
+        top: 25px;
+        font-size: 35px;
+        color: white;
+        padding: 6px 12px;
+        transition: all .5s;
+    }
+    label #cancel{
+        position: fixed;
+        z-index: 1000;
+        left: -205px;
+        top: 15px;
+        font-size: 30px;
+        color: #ffffff;
+        padding: 4px 9px;
+        transition: all .5s ease;
+    }
+    #check:checked ~ .sidebar{
+        left: 0;
+    }
+
+    #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ main{
+        margin-left: 250px;
+        transition: all .5s ease;
+    }
+    #check:checked ~ label #cancel{
+        left: 205px;
+    }
+
+
+
+
+
+  /*.header-logo-link{
     font-family: 'Bad Script';
     font-style: normal;
     font-weight: 500;
@@ -498,7 +588,7 @@ textarea {
   a:hover, a:focus{
     text-shadow: black 8px 5px 5px, 0 0 1.5em red;
     transition: 0.3s all;
-  }
+  }*/
   
   /*header styles end*/
 
@@ -831,7 +921,7 @@ textarea {
 
 .foter{
     width: 100%;
-    background-color: rgb(0, 3, 44);
+    background-color:#0e268f;
     padding: 60px 0;
 }
 
@@ -891,7 +981,7 @@ span{
 }
 
 .footer_mail:hover,.footer_mail:focus, .footer_mail:active{
-    color: #c55a09;
+    color: #e76712;
 }
 
 .footer-logo:hover,.footer-logo:focus, .footer-logo:active {
