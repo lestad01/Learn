@@ -497,14 +497,21 @@ textarea {
         color: white;
         padding: 6px 12px;
         transition: all .5s;
+        position: fixed;
+
+    } 
+    .header_scroll:not(#btn) {
+        color: black;
+        transition: 0.4s linear;
     }
+
     label #cancel{
         position: fixed;
         z-index: 1000;
         left: -205px;
         top: 15px;
         font-size: 30px;
-        color: #ffffff;
+        color: white;
         padding: 4px 9px;
         transition: all .5s ease;
     }
@@ -529,6 +536,8 @@ textarea {
 
 
 
+
+
   /*.header-logo-link{
     font-family: 'Bad Script';
     font-style: normal;
@@ -546,10 +555,7 @@ textarea {
       width: 100%;
       z-index: 222;
   }
-  .header_scroll {
-      background-color: rgb(0, 3, 44);
-      transition: 0.4s linear;
-  }
+  
   .header_wrapper{
       display: flex;
       flex-wrap: wrap;
@@ -922,7 +928,7 @@ textarea {
 .foter{
     width: 100%;
     background-color:#0e268f;
-    padding: 60px 0;
+    padding: 45px 0;
 }
 
 .foter-item{
@@ -950,7 +956,7 @@ textarea {
     justify-content: flex-end;
 }
 .div_link{
-    padding: 30px 0;
+    padding: 30px 0 0 0;
 }
 
 .foter-nav {
@@ -973,7 +979,7 @@ textarea {
     text-decoration: none;
 }
 .footer-link:hover,.footer-link:focus, .footer-link:active {
-    opacity: 65%;
+    opacity: 75%;
     transition: 0.3s all;
 }
 span{
@@ -985,7 +991,7 @@ span{
 }
 
 .footer-logo:hover,.footer-logo:focus, .footer-logo:active {
-    opacity: 65%;
+    opacity: 75%;
     transition: 0.3s all;
 }
 

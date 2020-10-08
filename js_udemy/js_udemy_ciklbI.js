@@ -13,10 +13,9 @@ do {
 }
 while (num < 55);
 
-/*or (let i = 2; i < 10; i++) {
+for (let i = 2; i < 10; i++) {
     if (i === 8) {
-        /break;
+        //break;
         continue;
     }
         console.log(i);
-}*/

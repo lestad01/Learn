@@ -28,7 +28,7 @@ const user = "Ivan";
 
 alert(`Hi, ${user}`);*/
 
-const numbersOFFilms = prompt('Сколько фильмов вы уже посмотрели?', '');
+const numbersOFFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
     count: numbersOFFilms,
