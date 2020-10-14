@@ -434,7 +434,7 @@ textarea {
       content: '';
       width: 253px;
       height: 4px;
-      background-color: #006DFE;
+      background-color: #30363b;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -447,7 +447,7 @@ textarea {
       left: -250px;
       width: 250px;
       height: 100%;
-      background: #0e268f;
+      background: #30363b;
       transition: all .5s ease;
   }
 
@@ -456,7 +456,7 @@ textarea {
         color: white;
         text-align: center;
         line-height: 70px;
-        background: #0e268f;
+        background: #30363b;
         user-select: none;
     }
 
@@ -489,6 +489,7 @@ textarea {
         position: absolute;
         cursor: pointer;
         border-radius: 3px;
+        z-index: 3000;
     }
     label #btn{
         left: 40px;
@@ -500,10 +501,6 @@ textarea {
         position: fixed;
 
     } 
-    .header_scroll:not(#btn) {
-        color: black;
-        transition: 0.4s linear;
-    }
 
     label #cancel{
         position: fixed;
@@ -603,25 +600,36 @@ textarea {
 
   /*Intro styles start*/
     .intro{
-        min-height: 100vh;
-        background: url(../img/logos.jpg) no-repeat center;
-        background-size: cover;
-        padding-top: 200px;
-        padding-bottom: 210px;
+        position: relative;
+        min-height: 110vh;
+        padding-top: 100px;
+        padding-bottom: 180px;
+    } 
+    .intro_media{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .wrapper{
+        position: relative;
+        z-index: 1000;
     }
     .intro-title{
         max-width: 619px;
         font-weight: 500;
-        font-size: 30px;
-        line-height: 60px;
-        color: rgb(235, 226, 226);
+        font-size: 35px;
+        color: white;
         margin-bottom: 15px;
     }
   .intro_subtitle{
         max-width: 546px;
-        color: rgb(235, 226, 226);
-        font-size: 20px;
-        line-height: 30px;
+        font-weight: 500;
+        color: white;
+        font-size: 25px;
+        line-height: 40px;
         margin-bottom: 30px;
     }
 
@@ -642,14 +650,14 @@ textarea {
      margin-right: 260px;
      padding-bottom: 5px;
      font-size: 20px;
-     color: rgb(235, 226, 226);
+     color: white;
   }
   .search_form_field::placeholder{
      font-family: 'Bad Script';
      font-style: normal;
      font-weight: 500;
-     font-size: 20px;
-     color: rgb(235, 226, 226);
+     font-size: 25px;
+     color: white;
   }
 
   .search_form_submit {
@@ -659,15 +667,15 @@ textarea {
     padding: 5px 15px;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 18px;
-    color: rgb(235, 226, 226);
+    font-size: 20px;
+    color: white;
     background-color: transparent;
     border-radius: 16px;
     border: 0;
   }
 
   .search_form_submit:hover, .search_form_submit:focus, .search_form_submit:active {
-    background-color: #1020af;
+    background-color: #141516;
   }
 /*Intro styles end*/
 
@@ -805,7 +813,7 @@ textarea {
     content: '';
     width: 253px;
     height: 4px;
-    background-color: #006DFE;
+    background-color:#30363b;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -897,7 +905,7 @@ textarea {
     content: '';
     width: 253px;
     height: 4px;
-    background-color: #006DFE;
+    background-color: #30363b;
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -927,7 +935,7 @@ textarea {
 
 .foter{
     width: 100%;
-    background-color:#0e268f;
+    background-color:#30363b;
     padding: 45px 0;
 }
 
