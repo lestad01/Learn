@@ -65,6 +65,15 @@ console.log(personalMovieDB);
 
 
 
+const calc = (a,b) => {
+    console.log('2');
+    return a + b;
+};
+console.log(calc(10,2));
+
+
+
+
 
 
 
