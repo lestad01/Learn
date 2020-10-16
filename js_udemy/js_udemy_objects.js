@@ -9,7 +9,7 @@ const options = {
         background: 'red'
     },
     makeTest: function() {       //создаем свой метод (это действие,которые может совершать объект)
-        console.log("Test");
+        console.log("2" * "2");
     }
 };
 
@@ -17,7 +17,7 @@ options.makeTest();
 
 
 const{border,background} = options.colors; //деструктуризация (вытащили 2 ключа в отдельную переменную)
-console.log(background);
+console.log(border);
 
 //console.log(Object.keys(options).length);
 
@@ -35,7 +35,7 @@ console.log(background);
    
 // };
 
-// console.log(Object.keys(prot).length);
+// console.log(Object.keys(prot));
 
 
 // console.log(options.name);

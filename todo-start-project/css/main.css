@@ -17,7 +17,7 @@ body {
     padding-top: 5px;
 }
 
-.task-title--done {
+.task-title-done {
     color: #c7c7c7;
     text-decoration: line-through;
 }

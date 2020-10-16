@@ -412,14 +412,12 @@ textarea {
       max-width: 100%;
       height: auto;
   }
-  .wrapper{
-      max-width: 1060px;
-      margin: 0 auto 25px auto; /* выравнивает по центру внутри его родителя*/
-  }
+ 
 
   .wrapper-full{
       max-width: 1260px;
       margin: 0 auto;
+      padding: 0 25px;
   }
   .section_title{
       font-weight: 500;
@@ -452,6 +450,7 @@ textarea {
   }
 
     .sidebar header {
+        padding: 5px 0 0 0;
         font-size:  22px;
         color: white;
         text-align: center;
@@ -528,72 +527,7 @@ textarea {
     #check:checked ~ label #cancel{
         left: 205px;
     }
-
-
-
-
-
-
-
-  /*.header-logo-link{
-    font-family: 'Bad Script';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    text-decoration: none;
-    color: rgb(235, 226, 226);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  .header{
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 222;
-  }
-  
-  .header_wrapper{
-      display: flex;
-      flex-wrap: wrap;
-      align-items: flex-end;
-      justify-content: space-between;
-      padding-top: 35px;
-  }
-  .header_list{
-      display: flex;
-      flex-wrap: wrap;
-  }
-  .header-item{
-      margin-right: 82px;
-  }
-  .header-item:last-child{
-      margin-right: 0;
-  }
-  .header_link {
-      font-family: 'Bad Script';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 25px;
-      line-height: 14px;
-      color: rgb(235, 226, 226);
-      text-decoration: none;
-  }
-  .header_link:hover,.header_link:focus, .header_link:active {
-      opacity: 65%;
-      transition: 0.3s all;
-  }
-  .header-logo-link:hover,.header-logo-link:focus, .header-logo-link:active {
-      opacity: 65%;
-      transition: 0.3s all;
-  }
- 
-  a:hover, a:focus{
-    text-shadow: black 8px 5px 5px, 0 0 1.5em red;
-    transition: 0.3s all;
-  }*/
-  
-  /*header styles end*/
+    /*header styles end*/
 
 
 
@@ -603,8 +537,13 @@ textarea {
         position: relative;
         min-height: 110vh;
         padding-top: 100px;
-        padding-bottom: 180px;
-    } 
+    }  
+    .wrapper{
+      max-width: 1060px;
+      margin: 0 auto 25px auto; /* выравнивает по центру внутри его родителя*/
+      position: relative;
+      z-index: 1000;
+    }
     .intro_media{
         position: absolute;
         top: 0;
@@ -613,14 +552,11 @@ textarea {
         height: 100%;
         overflow: hidden;
     }
-    .wrapper{
-        position: relative;
-        z-index: 1000;
-    }
+   
     .intro-title{
         max-width: 619px;
         font-weight: 500;
-        font-size: 35px;
+        font-size: 40px;
         color: white;
         margin-bottom: 15px;
     }
@@ -628,8 +564,8 @@ textarea {
         max-width: 546px;
         font-weight: 500;
         color: white;
-        font-size: 25px;
-        line-height: 40px;
+        font-size: 26px;
+        line-height: 45px;
         margin-bottom: 30px;
     }
 
@@ -649,14 +585,14 @@ textarea {
      border-bottom: 2px solid #BFC0C5;
      margin-right: 260px;
      padding-bottom: 5px;
-     font-size: 20px;
+     font-size: 25px;
      color: white;
   }
   .search_form_field::placeholder{
      font-family: 'Bad Script';
      font-style: normal;
      font-weight: 500;
-     font-size: 25px;
+     font-size: 27px;
      color: white;
   }
 
@@ -698,7 +634,7 @@ textarea {
 .benefits_title {
     width: 100%;
     position: absolute;
-    top:40px;
+    top:25px;
     left: 0;
     font-weight: 500;
     font-size: 30px;
@@ -757,9 +693,12 @@ textarea {
 }
 .places_title {
     margin-bottom: 37px;
-    margin-right: 15px;
+    margin-left: 10px;
 }
 
+.places_caption {
+    max-width: 1260px;
+}
 .places_cards {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -881,10 +820,10 @@ textarea {
 /*Videos start*/
 .videos {
     width: 100%;
-    margin-bottom: 40px;
 }
 
 .videos_places {
+    max-width: 1260px;
     position: relative;
     top: -75px;
     left: 0;
@@ -948,7 +887,7 @@ textarea {
     font-family: 'Bad Script';
     font-style: normal;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 30px;
     text-decoration: none;
     color: rgb(235, 226, 226);
     text-transform: uppercase;
@@ -981,7 +920,7 @@ textarea {
     font-family: 'Bad Script';
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 14px;
     color: rgb(235, 226, 226);
     text-decoration: none;
@@ -1002,6 +941,124 @@ span{
     opacity: 75%;
     transition: 0.3s all;
 }
-
-
 /*Footer end*/
+
+
+/* media queries start  */
+
+@media screen and (max-width:1440px) {
+
+
+     /*Intro styles start media*/
+    .intro{
+        max-width: 100%;
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        min-height: 100vh;
+    }
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: start;
+        margin: 30px auto 0 auto;
+    }
+     /*Intro styles end media*/
+
+
+     /*Benefits start media*/
+    .benefits_wrap{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .benefits_title {
+        top: 30px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        font-weight: 500;
+        font-size: 30px;
+        transform: translateY(-100%);
+        background-color: white;
+    }
+    /*Benefits end media*/
+
+
+    /*Music start media*/
+    .places_cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 15px; 
+        text-align: center;
+    }
+
+    .places_title  {
+        margin-bottom: 37px;
+        margin-left: 110px;
+    }
+    /*Music end media*/
+
+
+    /*IMG start media*/
+    .img_title{
+        margin-bottom: 37px;
+        margin-left: 110px;
+    }
+    .wrapper_img{
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 0 25px 0 25px;
+    }
+    /*IMG end media*/
+
+    /*Video start media*/
+    .videos_places {
+        margin-left: 110px;
+    }
+    /*Video end media*/
+    
+
+    /* Header button start */
+    .sidebar{
+        left: -200px;
+        width: 200px;
+    }
+
+    .sidebar header {
+        font-size:  15px;
+        line-height: 50px;
+    }
+
+    .sidebar ul a {
+        line-height: 65px;
+        font-size: 15px;
+        padding-left: 40px;
+    }
+
+    label #btn{
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+    } 
+
+    label #cancel{
+        top: 10px;
+        font-size: 30px;
+    }
+    #check:checked ~ label #btn{
+        left: 200px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ main{
+        margin-left: 200px;
+        transition: all .5s ease;
+    }
+    #check:checked ~ label #cancel{
+        left: 150px;
+    }
+     /* Header button end */
+
+}
+/* media queries end  */
