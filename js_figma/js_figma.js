@@ -1,6 +1,6 @@
 
     window.onscroll = function () {
-        if (window.pageYOffset > 900) {
+        if (window.pageYOffset > 930) {
             let stile = document.querySelector("#btn");
             stile.style.color = "black";
             stile.style.transition = "0.3s linear";
@@ -16,6 +16,7 @@
            knop.style.transition = "0.3s linear";
         }
     };
+
 
 
 /*header.classList.add("header_scroll");
