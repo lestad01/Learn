@@ -21,13 +21,8 @@ forms.addEventListener('submit', function (evr) {
     const taskHTML = `<li class="list-group-item d-flex justify-content-between">
                         <span contenteditable="true" class="task-title">${tasksText}</span>
                         <div>
-<<<<<<< HEAD
             <button type="button" data-action="ready" class="btn btn-light align-self-end">Готово</button>
             <button type="button" data-action="delete-task" class="btn btn-light align-self-end">Удалить</button>
-=======
-                <button type="button" data-action="ready" class="btn btn-light align-self-end">Готово</button>
-                <button type="button" data-action="delete-task" class="btn btn-light align-self-end">Удалить</button>
->>>>>>> 52c96bf16e996b03bd068330e54cba934ee7cb35
                         </div>
                     </li>`;
 
