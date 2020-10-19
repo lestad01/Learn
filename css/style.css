@@ -926,7 +926,7 @@ textarea {
     text-decoration: none;
 }
 .footer-link:hover,.footer-link:focus, .footer-link:active {
-    opacity: 75%;
+    opacity: 70%;
     transition: 0.3s all;
 }
 span{
@@ -1190,5 +1190,346 @@ span{
     }
     /*Footer end media*/
 }
+@media screen and (max-width:960px) {
 
+    /* Header button start */
+    .sidebar{
+        left: -150px;
+        width: 150px;
+    }
+
+    .sidebar header {
+        font-size:  13px;
+        line-height: 40px;
+    }
+
+    .sidebar ul a {
+        line-height: 40px;
+        font-size: 13px;
+        padding-left: 30px;
+    }
+
+    label #btn{
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+    } 
+
+    label #cancel{
+        top: 10px;
+        font-size: 20px;
+    }
+    #check:checked ~ label #btn{
+        left: 150px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ main{
+        margin-left: 150px;
+        transition: all .5s ease;
+    }
+    #check:checked ~ label #cancel{
+        left: 120px;
+    }
+    /* Header button end */
+
+
+    /* Intro start media */
+    .intro{
+        min-height: 58vh;
+    }
+    .intro-title{
+        font-size: 23px;
+    } 
+    
+    .intro_subtitle{
+        font-size: 15px;
+    } 
+    .search_form_field {
+        font-size: 15px;
+    }
+    .search_form_field::placeholder{
+        font-size: 15px;
+     } 
+    .search_form_submit{
+        font-size: 15px;
+     }
+    /* Intro end media */
+
+
+    /*Benefits start media*/
+   .benefits_wrap{
+       max-width: 600px;
+   }
+   .benefits_title{
+       font-size: 23px;
+   }
+    .benefits_card_title{
+        font-size: 17px;
+    }
+    .benefits_card_description{
+        font-size: 15px;
+    }
+    .benefits_card_more{
+        font-size: 13px;
+    }
+    .benefits_card_foto{
+        font-size: 20px;
+    }
+     /*Benefits end media*/
+
+
+    /*Music start media*/
+    .wrapper-full{
+        max-width: 850px;
+    }
+    .places_cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2px; 
+        text-align: center;
+    }
+    .places {
+        margin-bottom: 90px;
+    }
+    .music_card{
+        width: 100px;
+        height: 100px;
+    }
+    .places_title  {
+        margin-bottom: 27px;
+        margin-left: 110px;
+        font-size: 23px;
+    }
+    /*Music end media*/
+
+
+    /* IMG start media */
+    .wrapper_img{
+        max-width: 680px;
+    }
+    .images{
+        margin-bottom: 165px;
+    }
+    .img_title{
+        margin-bottom: 25px;
+        margin-left: 50px;
+        font-size: 23px;
+    }
+    .nature_images_title{
+        font-size: 30px;
+    }
+    .nature_picture_cards{
+        gap: 5px;
+        padding: 0;
+    }
+    /* IMG end media */
+
+
+
+    /*Footer start media*/ 
+    .div_link{
+        padding: 15px 0 0;
+    }
+    .footer-logo{
+        font-size: 20px;
+    }
+    .footer-link{
+        font-size: 15px;
+    }
+    .foter-nav{
+        padding: 0 0 12px 0;
+    }
+    .span_1 {
+        font-size: 15px;
+    }
+    /*Footer end media*/
+}
+
+
+@media screen and (max-width:730px) {
+
+    /* Header button start */
+    .sidebar{
+        left: -110px;
+        width: 110px;
+    }
+
+    .sidebar header {
+        font-size:  11px;
+        line-height: 20px;
+    }
+
+    .sidebar ul a {
+        line-height: 20px;
+        font-size: 10px;
+        padding-left: 8px;
+    }
+
+    label #btn{
+        top:  3px;
+        left: 5px;
+        font-size: 15px;
+    } 
+
+    label #cancel{
+        top: 3px;
+        right: 5px;
+        font-size: 15px;
+    }
+    #check:checked ~ label #btn{
+        left: 110px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ main{
+        margin-left: 110px;
+        transition: all .5s ease;
+    }
+    #check:checked ~ label #cancel{
+        left: 88px;
+    }
+    ul li:hover a {
+        padding-left: 20px;
+    }
+    /* Header button end */
+
+
+    /* Intro start media */
+    .intro{
+        min-height: 60vh;
+    }
+    .intro-title{
+        font-size: 18px;
+        line-height: 25px;
+    } 
+    
+    .intro_subtitle{
+        font-size: 13px;
+        line-height: 25px;
+    } 
+    .search_form_field {
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .search_form_field::placeholder{
+        font-size: 13px;
+        line-height: 25px;
+     } 
+    .search_form_submit{
+        font-size: 13px;
+        line-height: 25px;
+     }
+    /* Intro end media */
+
+
+    /*Benefits start media*/
+   .benefits_wrap{
+       max-width: 600px;
+   }
+   .benefits_title{
+       font-size: 18px;
+   }
+    .benefits_card_title{
+        font-size: 15px;
+    }
+    .benefits_card_description{
+        font-size: 13px;
+    }
+    .benefits_card_more{
+        font-size: 13px;
+    }
+    .benefits_card_foto{
+        font-size: 17px;
+    }
+     /*Benefits end media*/
+
+
+    /*Music start media*/
+    .wrapper-full{
+        max-width: 800px;
+    }
+    .places_cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2px; 
+        text-align: center;
+    }
+    .places {
+        margin-bottom: 90px;
+    }
+    .music_card{
+        width: 80px;
+        height: 80px;
+    }
+    .places_title  {
+        margin-bottom: 20px;
+        margin-left: 110px;
+        font-size: 18px;
+    }
+    .section_title:after{
+        bottom: 10px;
+        width: 200px;
+    }
+    /*Music end media*/
+
+
+    /* IMG start media */
+    .wrapper_img{
+        max-width: 650px;
+    }
+    .images{
+        margin-bottom: 165px;
+    }
+    .img_title{
+        margin-bottom: 20px;
+        margin-left: 50px;
+        font-size: 18px;
+    }
+    .nature_images_title{
+        font-size: 25px;
+    }
+    .nature_picture_cards{
+        gap: 3px;
+        padding: 0;
+    }
+    .img_section:after{
+        bottom: 10px;
+        width: 200px;
+    }
+    /* IMG end media */
+
+     /*Video start media*/
+     .videos_places {
+        margin-left: 60px;
+        margin-bottom: 25px;
+    }
+    .videos_section{
+        font-size: 18px;
+    }
+    .videos_section:after{
+        bottom: 0;
+        width: 200px;
+    }
+    /*Video end media*/
+
+
+    /*Footer start media*/ 
+    .div_link{
+        padding: 8px 0 0;
+    }
+    .footer-logo{
+        font-size: 16px;
+    }
+    .footer-link{
+        font-size: 12px;
+    }
+    .foter-nav{
+        padding: 0 0 12px 0;
+    }
+    .span_1 {
+        font-size: 12px;
+    }
+    /*Footer end media*/
+}
 /* media queries end  */
