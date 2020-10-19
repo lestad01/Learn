@@ -3,24 +3,27 @@
 function first (s) {
     setTimeout(function () {
         console.log(s);
-    }, 700); 
+    }, 800); 
 }
 
 function second(d) {
-    console.log(d);
+    setTimeout(function(){
+     console.log(d);   
+    }, 600);
 }
 first("So");
 second("Hi");
 
 
 
-function learnJS(lang, callback) {
-    console.log(`I lerning: ${lang}`);
-    callback();
+function learnJS(lang,callback) {
+    console.log(`I learning: ${lang}`);
+    callback(); //вызывает вторую функцию,когда первая функция закончит полнгостью свое действие
 }
 
-function done() {
-    console.log('I passed this lesson')
+function don() {
+    console.log('I passed this lesson');
 }
 
-learnJS('JavaScript', done);
+learnJS('English Language', don);
+

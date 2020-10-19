@@ -1,21 +1,22 @@
 "use strict";
 
-let num = 50;
+// let num = 55;
 
-/*while (num <= 55) {
-    console.log(num);
-    num++;
-}*/
+// while (num >= 50) {
+//     console.log(num);
+//     num--;
+// }
 
-do {
-    console.log(num);
-    num++;
-}
-while (num < 55);
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num <= 61);
 
 for (let i = 2; i < 10; i++) {
-    if (i === 8) {
-        //break;
-        continue;
-    }
+    if (i < 9) {
         console.log(i);
+        // break;
+        //  continue;
+    }}
+        

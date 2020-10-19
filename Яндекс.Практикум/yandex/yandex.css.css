@@ -1,0 +1,54 @@
+html {
+    background-image: linear-gradient(to top right, rgb(218, 230, 209), rgb(211, 223, 203), rgb(203, 215, 196), rgb(196, 208, 190), rgb(189, 201, 184), rgb(182, 194, 177), rgb(174, 186, 171), rgb(167, 179, 164), rgb(160, 172, 158), rgb(153, 165, 152), rgb(145, 157, 145), rgb(138, 150, 139));
+}
+
+
+h1 {
+    color: white;
+    font-weight: normal;
+    padding-top: 34px;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  
+  h2 {
+    color:white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom:24px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+  }
+  h3{
+    color: white;
+    font-family: 'Long Cang', cursive;
+    margin:0;
+    font-size: 25px;
+    text-transform:uppercase;
+    line-height: 18px;
+    font-weight: normal;
+  }
+  div {
+    margin:auto;
+    text-align: center;
+    background: -webkit-linear-gradient(45deg, rgb(67, 75, 73), rgb(80, 93, 94));
+    width: 500px;
+    height: 500px;
+  }
+  img {
+    width: 220px;
+    height: 270px;
+    margin-bottom: 20px;
+  }
+  p {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    line-height: 5px;
+    padding-top: 15px;
+  }

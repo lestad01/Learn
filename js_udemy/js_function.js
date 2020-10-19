@@ -1,21 +1,34 @@
 "use strict";
 
-function noc() {
-    console.log("Hello Mir!");
+function noc(numbers) {
+    console.log(numbers);
 }
-noc();
+noc(2*2);
 
 
-let num = 228;
+// let num = 102;
 
-function showFirstMessage(text, arg) {
-    console.log(text, arg);
-    let num = 128;
-    console.log(num);
-}
+// function showFirstMessage(tex, argument) {
+//     console.log(tex, argument);
+//     let num = 101;
+//     console.log(num);
+// }
 
-showFirstMessage("Hello mafaka", "Pisos");
-console.log(num);
+// showFirstMessage("Hello, my dear Friend", "Maksim");
+// console.log(num);
+
+// const s = 21;
+
+// function showNumbers(date, name) {
+//     console.log(date, name);
+//     let s = "Contacts";
+//     console.log(s);
+// }
+// showNumbers("01.07.1995", "Aleksander");
+// console.log(s);
+
+
+
 
 
 function calc(a,b) {
@@ -24,24 +37,25 @@ function calc(a,b) {
 
 console.log(calc(228, 118));
 console.log(calc(2, 6));
+console.log(calc(228, 228));
 ///
 
-function ret() {
+function ret(nam) {
     let nun = 50;
-
+    console.log(nam);
     ////
     return nun;
 }
-const anotherNum = ret();
+const anotherNum = ret(2*50);
 console.log(anotherNum);
 
 ///
 
 console.log(kalk(2,-1));
 console.log(kalk(7,8));
-console.log(kalk(12,10));
-function kalk(a,b){
-return(a + b);
+console.log(kalk(113, 2));
+function kalk(a, b){
+    return(a * b);
 }
 ///
 
@@ -54,15 +68,24 @@ logger();
 
 
 const wow = (a, b) => { 
-    return a + b;
+    return a / b;
 };
-console.log(wow(22,45));
+console.log(wow(22,11));
+//
 
-
-let a = 3
+let a = 4;
  function addTwo(x) {
-   let ret = x + 2;
+   let ret = x / 2;
    return ret;
  }
  let b = addTwo(a);
   console.log(b);
+
+
+  let w = "8";
+    function showThe(nun) {
+        let v = "2" + "3" + nun;
+        return v;
+    } 
+    let n = showThe(w);
+    console.log(n);

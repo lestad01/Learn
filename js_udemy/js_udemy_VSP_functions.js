@@ -19,10 +19,11 @@ console.log(logg.substring(6, 11)); /*не поддерживает отрица
 
 console.log(logg.substr(6, 1));
 
-const numm = 12.2;
+const numm = 12.8;
 console.log(Math.round(numm));
 
-const tes = "12.2228px";
+const tes = "12.88723lq";
 console.log(parseInt(tes));
 console.log(parseFloat(tes));
 
+console.log(parseInt(tes));
