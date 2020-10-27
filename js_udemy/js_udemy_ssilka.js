@@ -89,6 +89,13 @@ const arrray = ["a", "b"];
 const newAarray = [...arrray];
 console.log(newAarray);
 
+const q = {
+    one: 2,
+    two: 4
+};
+
+const neWobj = {...q};
+
 //
 
 // function stay(From) {
