@@ -1,0 +1,26 @@
+// main: ../stil.less
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: .5em 1em;
+    background-color: #ccc;
+    border-radius: @radius;
+    font-family: inherit;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+
+    &:hover, &:focus{
+        outline: 0;
+        background-color: rgb(136, 136, 136);
+    }
+
+    &--primary {
+        background-color: @primary;
+    }
+    &--secondary {
+        background-color: @secondary;
+    }
+}
+
