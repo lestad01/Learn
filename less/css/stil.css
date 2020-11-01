@@ -1,7 +1,7 @@
 .title {
   margin: 0;
   font-size: 5rem;
-  color: #ff0909;
+  color: rgba(255, 9, 9, 0.6);
   font-weight: 700;
 }
 .btn {
@@ -14,17 +14,46 @@
   font-size: 1rem;
   color: white;
   text-decoration: none;
+  transition: 0.4s linear;
+}
+.btn + .btn {
+  margin-left: 1rem;
+}
+.btn span {
+  color: #000;
 }
 .btn:hover,
 .btn:focus {
   outline: 0;
-  background-color: #888888;
+  background-color: #c4c4c4;
 }
 .btn--primary {
   background-color: #ff0909;
+  color: #000;
+}
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: #a20000;
 }
 .btn--secondary {
   background-color: #b6b900;
+}
+.btn--secondary:hover,
+.btn--secondary:focus {
+  background-color: #525300;
+}
+.btn--green {
+  background-color: #22f557;
+  color: #000;
+}
+.btn--green:hover,
+.btn--green:focus {
+  background-color: #08a930;
+}
+.post {
+  width: 1000px;
+  height: 500px;
+  background: url("../img/gg.jpg") center no-repeat;
 }
 html,
 body {
