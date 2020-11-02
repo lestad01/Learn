@@ -1,0 +1,12 @@
+// main: stil.less
+
+.btn(@bg) {
+  
+        background-color: @bg;
+        & when (lightness(@bg) > 50)  {
+            color: @black;
+        }
+        &:hover, &:focus{
+            background-color: darken(@bg, 20%);
+        }
+    }

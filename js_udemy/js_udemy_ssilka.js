@@ -40,7 +40,6 @@
 // };
 
 // const newNumbers = copy(numbers);
-<<<<<<< HEAD
 
 // newNumbers.c.x = 10;
 // console.log(newNumbers);
@@ -79,18 +78,13 @@ const numbers = {
         x:33,
         f: 1
     }
-=======
 
 // newNumbers.b = 10;
 // console.log(newNumbers);
 // console.log(numbers);
 
 
-const add = {
-    d: 17,
-    w: 9
->>>>>>> 50e00b473086b7e5b47dba6b726cccfa9ce5a770
-};
+
 const add = {
     d:17,
     e: 22
@@ -137,6 +131,8 @@ const q = {
 const newObj = {...q};
 console.log(newObj);
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 //console.log(Object.assign(numbers, add)); // - поверхностная копия объекта
@@ -213,4 +209,5 @@ const neWobj = {...q};
 
 
 >>>>>>> 50e00b473086b7e5b47dba6b726cccfa9ce5a770
+>>>>>>> 6105696f229b6cdc85e6bb18cfac515336fa1352
 
