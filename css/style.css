@@ -417,7 +417,7 @@ textarea {
   .wrapper-full{
       max-width: 1260px;
       margin: 0 auto;
-      padding: 0 25px;
+      padding: 25px;
   }
   .section_title{
       font-weight: 500;
@@ -477,7 +477,7 @@ textarea {
         padding-left: 60px;
     }
 
-    .sidebar ul a i {
+    .sidebar ul a  {
         margin-right: 16px;
     }
 
@@ -920,6 +920,9 @@ span{
 /*Footer end*/
 
 
+
+
+
 /*Music (audio page) start*/
 
 
@@ -928,7 +931,7 @@ span{
       font-style: normal;
       font-weight: 500;
       color: white;
-      background: url(../img/img_audio_copy.jpg) no-repeat;
+      background: url(../img/forrest.jpg) no-repeat;
       background-size: cover;
       background-attachment: fixed;
       left: 0;
@@ -951,6 +954,22 @@ span{
     flex-wrap: wrap;
     justify-content: center;
 }
+.logos_1{
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(235, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.signal:hover {
+    color: #e76712;
+    transition: 0.3s all;
+}
+
 .int{
     max-width: 100%;
     padding: 30px;
