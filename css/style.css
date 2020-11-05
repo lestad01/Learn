@@ -1019,7 +1019,15 @@ span{
 }
 /*Music (audio page) end*/
 
-
+/*storm begin*/
+.intro_storm{
+    position: relative;
+    height: 100vh;
+}
+video{
+    background-size: cover;
+}
+/*storm end*/
 
 
 
