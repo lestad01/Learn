@@ -4,97 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sounds of nature</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_audio.css">
     <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
     <link rel="icon" type="image" href="https://v1.iconsearch.ru/uploads/icons/humano2/128x128/weather-showers.png">
     <link rel="stylesheet" href="../Learn/css/animate.css">
 </head>
     <body>
 
-        
-        <input type="checkbox" id="check">
-        <label class="header_title" for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-        </label>
-
-            <div class="sidebar">
-                <header>Chillout Weather</header>
-                    <ul >
-                        <li><a href="#"> Forecast weather</a></li>
-                        <li> <a href="#"> Audio</a></li>
-                        <li> <a href="#"> Videos</a></li>
-                        <li> <a href="#"> Contacts</a></li>
-                    </ul>
-            </div>
             <main class="main">
             <section class="intro_storm">
                 <div class="intro_media">
-                    <video class="intro_video" src="../Learn/img/video/Storm.mp4" autoplay muted loop>
+                    <video class="intro_video" src="../Learn/img/video/Storm.mp4" playsinline autoplay muted loop>
                     </video>
                 </div>
               
-                </div>
             </section>
 
+
+            <!-- start Tab (audio) -->
             <section class="sidebar_storm">
                 <div class="sidebar_innder">
                     <div id="container_storm">
                         <div class="tab">
-                            <ul class="tab-active">
-                                <li class="screen_1">
-                                    <a href="#">
-                                        <img src="#" alt="screen_1">
+
+                            <!-- start Tab of audio -->
+
+                            <ul class="tabs active">
+                                <li class="screen">
+                                    <a class="a_screen_1"  href="#">
+                                        <img class="img_screen" src="../Learn/img/svg/setting.svg" alt="screen_1">
                                     </a>
                                 </li>
-                                <li class="screen_2">
-                                    <a href="#">
-                                        <img src="#" alt="screen_2">
+                                <li class="screen">
+                                    <a class="a_screen_2" href="#">
+                                        <img class="img_screen" src="../Learn/img/svg/theme.svg" alt="screen_2">
                                     </a>
                                 </li>
                             </ul>
+                            <!-- end Tab of audio -->
+
+
+                            <!-- start Audioplayer of tab -->
+                            <div class="tab_content">
+                                <div class="tabs_item">
+
+
+                                    <div id="controls" class="audio_controls">
+                                        
+                                        <div class="logo">
+                                            <a class="play" href="#"> 
+                                                <img src="../Learn/img/svg/play.svg" alt="play"> 
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="line">
+                                            <audio id="audio" src="../Learn/music/storm.mp3"></audio>
+                                            <div class="audio-track"> <div class="time"></div> </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="jp_container" class="jp-audio jp-state-looped jp-state-playing">
+                                           
+
+                                    <div id="jp_container"></div>
+                                    <div id="jp_container"></div>
+                                
+                            </div>
+                            <!-- end Audioplayer of tab -->
+
                         </div>
                     </div>
                 </div>
             </section>
-        
+            <!-- end Tab (audio) -->
 
 
 
 
 
 
-            <!--Footer start-->
-            
-            <footer class="foter">
-                <div class="foter-wrapper">
-                    <div class="foter-item">
-                        <div class="foter-logo-block">
-                            
-                            <div class="div_footer_logo">
-                                <a href="#" class="footer-logo">Chillout Weather</a>
-                            </div>
-                            <div class="div_link">
-                                    <a href="https://vk.com/brivki95" target="_blank" class="footer-link footer_mail">Aleksandr "Prosto4ep" Chernov </a> 
-                                    <span class="span_1">||</span>
-                                    <a href="https://vk.com/egorovmaksima" target="_blank" class="footer-link footer_mail">Maksim "Dirin don doni" Egorov</a>
-                            </div>
-                        </div>
-
-                            <div class="foter-nav">
-                                    <a href="https://7oom.ru/puteshestviya.htm" target="_blank" class="footer-link">
-                                    Traveling around the world</a>
-                                    <a href="https://7oom.ru/foto.htm" target="_blank" class="footer-link">Nature in photos</a>
-                                    <a href="https://world-weather.ru/" target="_blank" class="footer-link">Weather forecast</a>
-                            </div>
-                    </div>
-                </div>
-            </footer>
+           
             </main>
-            <!--Footer end-->
+           
 
         </main>
-        <script src="../Learn/js_figma/js_figma.js"></script>
+        <script src="../Learn/js_figma/js_figma_audio.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="../Learn/js_figma/wow.min.js"></script>
         <script>

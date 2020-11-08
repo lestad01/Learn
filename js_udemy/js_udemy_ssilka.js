@@ -179,6 +179,7 @@ const q = {
 };
 
 const neWobj = {...q};
+console.log(newObj);
 
 //
 

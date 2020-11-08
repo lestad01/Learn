@@ -13,9 +13,9 @@ console.log(fruit.indexOf("fruit"));
 
 const logg = "Hello WoRLD";
 
-console.log(logg.slice(-6, -1));
+// console.log(logg.slice(-6, -1));
 
-console.log(logg.substring(6, 11)); /*не поддерживает отрицательные значения*/
+// console.log(logg.substring(6, 11)); /*не поддерживает отрицательные значения*/
 
 console.log(logg.substr(6, 1));
 

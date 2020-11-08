@@ -1,21 +1,21 @@
 "use strict";
 
-// if (7 !== 8) {
-//     console.log('ok!');
-// } else {
-//     console.log('Error!');
-// }
+if (9 == 8) {
+    console.log('ok!');
+} else {
+    console.log('Error!');
+}
 
 
-// const num = 169;
+const num = 69;
 
-// if (num < 49) {
-//     console.log('Error!');
-// } else if (num > 100) {
-//    console.log('too much!');
-// } else {
-//    console.log('Good!');
-// }
+if (num < 49) {
+    console.log('Error!');
+} else if (num > 100) {
+   console.log('too much!');
+} else {
+   console.log('Good!');
+}
 
 
 // const num = 10;
