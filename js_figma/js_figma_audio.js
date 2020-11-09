@@ -1,4 +1,4 @@
-// "use strict";
+
 
 let audio = document.getElementById("audio");
 let time = document.querySelector(".time");
@@ -26,6 +26,15 @@ play.addEventListener("click", function() {
 });
 
 
+pause.addEventListener("click", function() {
+    audio.pause();
+    clearInterval(audioPlay);
+});
+
+ play.onclick = (event) => {
+            console.log(event.target);
+            event.target.classList.add('pause');
+        };
     
 
 
