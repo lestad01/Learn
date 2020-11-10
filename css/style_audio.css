@@ -141,10 +141,12 @@ video{
     justify-content: space-around;
     align-items: center;
 }
-.play img {
+.pause img {
+    background: url(../img/svg/pause.svg) no-repeat;
     width: 60px;
     height: 60px;
 }
+
 
 
 
