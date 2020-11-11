@@ -61,15 +61,19 @@
                                         
                                         <div class="line">
                                             <audio id="audio" src="../Learn/music/storm.mp3"></audio>
-                                              <div class="valume"> <span class="volumeBar"></span> </div>
+                                            <div class="slide">
+                                                 <output for="fader" id="volume">0</output>
+                                                <input type="range" id="fader" min="0" max="100" value="0" step="1" oninput="outputUpdate(value)">
+                                            </div>
+                                             
                                         </div>
                                     </div>
-                                        <!-- <div class="time"></div> -->
-                                    <div id="jp_container" class="jp-audio jp-state-looped jp-state-playing">
+                                        
+                                    <!-- <div id="jp_container" class="jp-audio jp-state-looped jp-state-playing">
                                            
 
                                     <div id="jp_container"></div>
-                                    <div id="jp_container"></div>
+                                    <div id="jp_container"></div> -->
                                 
                             </div>
                             <!-- end Audioplayer of tab -->
@@ -90,6 +94,7 @@
            
 
         </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script src="../Learn/js_figma/js_figma_audio.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="../Learn/js_figma/wow.min.js"></script>
