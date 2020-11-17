@@ -1,10 +1,11 @@
-'use strict';
+"use strict";
 
-const box = document.getElementById('box'),
-      btns = document.getElementsByTagName('button'),
-      circles = document.getElementsByClassName('circle'),
-      hearts = document.guerySelectorAll('heart'),
-      oneHeart = document.querySelector('.heart');
+const box = document.getElementById('box');
+const btns = document.getElementsByTagName('button');
+const circles = document.getElementsByClassName('circle');
+const hearts = document.querySelectorAll('.heart');
+const oneHeart = document.querySelector('.heart');
+const wrapper = document.querySelector('.wrapper'); 
 
      // box.style.backgroundColor = 'yellow';
      // box.style.width = '300px';
@@ -25,5 +26,24 @@ circles[0].style.backgroundColor = 'red';
  const div = document.createElement('div');
 
  div.classList.add('black');
+ wrapper.append(div);
 
- document.querySelector('wrapper').append(div);
+// wrapper.appendChild(div);
+
+//  wrapper.prepend(div);
+
+// hearts[2].after(div);
+
+// wrapper.insertBefore(div, hearts[1]);
+
+// circles[0].remove();
+// wrapper.removeChild(hearts[1]);
+
+// hearts[0].replaceWith(circles[1]);
+// wrapper.replaceChild(circles[0], hearts[0]);
+
+div.innerHTML = "<h1>Hello World</h1>";
+
+// div.textContent = "Hello";
+
+div.insertAdjacentHTML("afterend", '<h2>Hi</h2>');
