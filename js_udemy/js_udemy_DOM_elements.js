@@ -40,10 +40,9 @@ circles[0].style.backgroundColor = 'red';
 // wrapper.removeChild(hearts[1]);
 
 // hearts[0].replaceWith(circles[1]);
-// wrapper.replaceChild(circles[0], hearts[0]);
 
-div.innerHTML = "<h1>Hello World</h1>";
+div.innerHTML = "<h3>Hello World</h3>";
 
-// div.textContent = "Hello";
+// div.textContent = "Hello"; 
 
 div.insertAdjacentHTML("afterend", '<h2>Hi</h2>');
