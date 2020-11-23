@@ -12,7 +12,7 @@ console.dir([1,2,3]);
 const soldier = {
     health: 400,
     armor: 120,
-    sayHello: function() {
+    sayHello: ()=> {
         console.log("Hello, Broucher");
     }
 };
@@ -23,13 +23,14 @@ const john = Object.create(soldier);
 //     health: 100
 // };
 
-// // john.__proto__ = soldier;
+// john.__proto__ = soldier;
 
-// Object.setPrototypeOf(john, soldier);
+Object.setPrototypeOf(john, soldier);
 
-// // console.log(john.armor);
+console.log(john.armor);
 
 john.sayHello();
+
 
 let proto = {
     eats:false

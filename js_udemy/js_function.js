@@ -3,19 +3,19 @@
 function noc(numbers) {
     console.log(numbers);
 }
-noc(2*2);
+noc((2*2)+18);
 
 
-// let num = 102;
+let num = 102;
 
-// function showFirstMessage(tex, argument) {
-//     console.log(tex, argument);
-//     let num = 101;
-//     console.log(num);
-// }
+function showFirstMessage(tex, argument) {
+    console.log(tex, argument);
+    let num = 101;
+    console.log(num);
+}
 
-// showFirstMessage("Hello, my dear Friend", "Maksim");
-// console.log(num);
+showFirstMessage("Hello, my dear Friend", "Maksim");
+console.log(num);
 
 // const s = 21;
 
@@ -32,7 +32,7 @@ noc(2*2);
 
 
 function calc(a,b) {
-    return (a + b);
+    return (a - b);
 }
 
 console.log(calc(228, 118));

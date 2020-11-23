@@ -120,9 +120,8 @@ const num = [2,6,4];
 log(...num);
 
 const array = ["a", "b"];
-const newAAray = [...array];
 
-console.log(newAAray);
+log(...newAAray);
 
 const q = {
     one:1,
@@ -131,10 +130,7 @@ const q = {
 const newObj = {...q};
 console.log(newObj);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
 //console.log(Object.assign(numbers, add)); // - поверхностная копия объекта
 
 const clone = Object.assign({}, add);
@@ -209,6 +205,5 @@ console.log(newObj);
 // console.log(NewNum);  Поверхностные копии объектов.
 
 
->>>>>>> 50e00b473086b7e5b47dba6b726cccfa9ce5a770
->>>>>>> 6105696f229b6cdc85e6bb18cfac515336fa1352
+
 

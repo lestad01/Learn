@@ -1,9 +1,9 @@
 "use strict";
 
 function first (s) {
-    setTimeout(function () {
+    setTimeout( ()=> {
         console.log(s);
-    }, 800); 
+    }, 800);
 }
 
 function second(d) {
