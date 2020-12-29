@@ -9,8 +9,8 @@ arr.sort();
 //     return a - b;
 // }
 
-// arr.pop();
-// arr.push(10);
+// arr.pop(2);
+// arr.push(228);
 // console.log(arr);
 
 // for (let i = 0; i < arr.length; i++) {
@@ -40,9 +40,9 @@ const qur = [2, 4, 8, 12];
 // qur.push(22);
 // console.log(qur);
 
-// for (let i = 0; i < qur.length; i++) {
-//     console.log(qur[i]);
-// }
+for (let i = 0; i < qur.length; i++) {
+    console.log(qur[i]);
+}
 
 // for (let value of qur) {
 //     console.log(value);
