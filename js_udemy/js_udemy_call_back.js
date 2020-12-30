@@ -15,7 +15,6 @@ first("So");
 second("Hi");
 
 
-
 function learnJS(lang,callback) {
     console.log(`I learning: ${lang}`);
     callback(); //вызывает вторую функцию,когда первая функция закончит полнгостью свое действие

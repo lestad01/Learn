@@ -6,7 +6,6 @@ let num = 65;
 //     console.log(num);
 //     num--;
 // }
-
 // do {
 //     console.log(num);
 //     num++;
@@ -16,7 +15,7 @@ let num = 65;
 for (let i = 2; i < 10; i++) {
     if (i < 7) {
         console.log(i);
-        break;
-        //  continue;
+        // break;
+        continue;
     }}
         

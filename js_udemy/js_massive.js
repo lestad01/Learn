@@ -1,13 +1,14 @@
 "use strict";
 
 const arr = [2, 13, 5, 7, 10];
-arr.sort();
+// arr.sort();
 // arr.sort(compareNum);
 // console.log(arr);
 
 // function compareNum(a, b) {
 //     return a - b;
 // }
+
 
 // arr.pop();
 // arr.push(10);
